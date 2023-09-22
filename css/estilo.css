@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.botonimagen{
+  background-image: none;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  body {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	width: 100%;
+	height: 100%;
+	color:#2c2d2a;
+
+    font-family: "Roboto", sans-serif;
+     
+    background: linear-gradient(
+      to right,
+      #000000,
+      #2a2626
+    ); 
+  }
+
+a {
+	text-decoration: none;
+    
+	color:#2c2d2a;
+}
+
+
+h1,
+h2 {
+	margin: 0;
+	padding: auto;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+H1{
+	padding: 10px;
+	color: #ff0000;
+}
+.header {
+	
+	cursor: default;
+	margin: 10px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	height:auto;
+	width: 90%;
+	white-space: nowrap;
+	flex-shrink: 0;
+	font-weight: 900;
+	font-size: 15px;
+	border-bottom: 9px solid rgb(239, 11, 255);
+	background-color:#e6decf;
+    justify-content: center;
+
+}
+
+.container {
+	
+	cursor: default;
+	max-width: 1100px;
+	border-radius: 4px;
+	height: auto;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: #e6decf;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.img1 {
+	width: 300px;
+	height: 200px;
+	
+}
+.imagen{
+  width: auto;
+  height:auto;
+    color: #00ca4e;
+	background-color: #00ca4e;
+	align-items: center;
+	align-self: center;
+	padding:auto;
+
+}
+.conte{
+	padding: 10px;
+}
+
+.imagenesesta{
+	display: flex;
+
+	align-items: center;
+	align-self: center;
+	padding:auto;
+}
+
+   
+/*tarjetas*/
+.tarjeta {
+	width: 190px;
+	height: 254px;
+	margin: 0 auto;
+	align-items: center;
+	text-align: center;
+	background: linear-gradient(0deg, #b4a7a7, #272727);
+	border-radius: 8px;
+	z-index: 1;
+	margin: 20px;
+  }
+  
+  .tresc {
+	display: flex;
+	align-items: center;
+	padding: 9px;
+  }
+  
+  .circulos {
+	padding: 0 4px;
+  }
+  
+  .rojo,.amarillo,.verde {
+	display: inline-block;
+	align-items: center;
+	width: 10px;
+	height: 10px;
+	padding: 1px;
+	border-radius: 50%;
+  }
+  
+  .rojo {
+	background-color: #ff605c;
+  }
+  
+  .amarillo {
+	background-color: #ffbd44;
+  }
+  
+  .verde {
+	background-color: #00ca4e;
+  }
+
+
+.inteesta{
+	color: #ff605c;
+	background-color: #ff605c;
+	height: 200px;
+}
+.img1esta{
+	height: 200px;
+	width: 190px;
+}
+
+
+.boton1{
+  
+	padding: 20px;
+	align-self: center;
+
+}
+.botoni{
+	padding: 10px 20px;
+	border: none;
+	font-size: 17px;
+	color: #fff;
+	border-radius: 7px;
+	letter-spacing: 4px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.5s;
+	transition-property: box-shadow;
+	background: rgb(0,140,255);
+	box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+
+
+
+.botoni:hover {
+  cursor: url(/public/img/imgcursor/mai-san.png),auto;
+  box-shadow: 0 0 10px rgb(167, 15, 209),
+              0 0 35px rgb(255, 0, 106),
+              0 0 60px rgb(118, 0, 245),
+              0 0 110px rgb(0,140,255);
+}
+
+h3{
+
+    color: blue;
+    animation: de 3s infinite;
+
+     
+}
+
+@keyframes de {
+
+    0% {
+        opacity: 0;
+      }
+      
+      86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 0, 0, 0.6), 0 0 60px rgb(167, 0, 239), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+      }
+
+    }
+   
+
+
+
+.footer {
+	width: 100%;
+	height: 100%;
+    box-shadow:  -5px 5px 28px 17px #b70909;
+    cursor: default;
+    background-color: rgb(24, 23, 23);
+    -webkit-padding-before: 40px;
+            padding-block-start: 29px;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-padding-after: 50px;
+            padding-block-end: 50px;
+  }
+
+  .footer__container p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
+  .footer__container ul {
+    list-style: none;
+  }
+  .footer__container ul li {
+    font-size: 15
+    px;
+    color: white;
+    text-align: center;
+  }
+
+
+  ::-webkit-scrollbar{
+    width: 20px;
+  }
+
+  ::-webkit-scrollbar-track{
+    border: 4px solid rgb(48, 45, 45);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.868) inset;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    border-radius: 100%;
+
+    background: linear-gradient(
+    45deg,
+    rgb(255, 90, 90),
+    #615363
+    );
+    
+
+  }
+
+
+
+  .redes{
+
+	display: flex;
+
+  }
+
+.gitup{
+	display: flex;
+	background-color: white;
+	margin: 10px;
+}
+  .git{
+	height: 70px;
+	width: 90px;
+  }
+
+  .face{
+	display: flex;
+	background-color: white;
+	margin: 10px;
+  }
+  .facebook{
+	height: 70px;
+	width: 60px;
+  }
+.imagenfin{
+ height: 500px;
+ width: 500px;
+
+}
+
+.parrafo{
+  margin:auto;
+  display: flex;
+  padding: 29px;
+  text-align: center;
+  
+}
+  .imagen2{
+    padding: auto;
+    display: flex;
+    color: #00ca4e;
+    border-color:  #ff0000 ;
+  }
+  .barnav li :hover{
+    cursor:url(/img/imgcursor/mai-san.png),auto ;
+    border-radius: 100px;
+ color:#cf2d3a;
+
+}
+a{
+  cursor:pointer;
+}
+.barnav ul li a  {
+    position: relative;
+    float:left;
+  font-size:25px;
+  padding: 19px;
+  color: rgb(0, 0, 0);
+ 
+}
+
+
+/*Manual*/
+
+.desplazamientoderecha { /**/
+    overflow: auto; /*para que no se salga*/
+	height:600px;/*altura */
+    padding: 1rem;
+    scroll-timeline-axis: inline;
+}
+
+ol,ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 1rem;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+    counter-reset: list-item;
+    perspective: 9000px;
+    transform-style: preserve-3d;
+    perspective-origin: 50% 50%;
+
+    > li {
+        flex: 1 1 240px;
+        min-width: 240px;
+        border: 1px solid currentColor;
+        padding: 1rem;
+        animation: auto ease-in-out intro forwards,
+            auto ease-in-out outro forwards;
+        animation-timeline: view(inline);
+        animation-range: entry, exit;
+        transform-origin: bottom center;
+    }
+
+    p,
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        color: rgb(0, 0, 0)fff;
+        font-weight: normal;
+    }
+}
+
+ol > li {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+       
+        font-size: 5em;
+        font-weight: bold;
+        color: #e10000;
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+
+    &::after {
+        content: "";
+        background-image: var(--bg);
+        position: absolute;
+        inset: -20px;
+        background-size: cover;
+        transform: scale(1);
+        transition: transform 0.5s ease-out, opacity 0.4s linear;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: #000000;
+        &::after {
+            transform: scale(1.1) rotate(4deg);
+            opacity: 0.8;
+        }
+    }
+}
+
+
+@keyframes intro {
+    from {
+        transform-origin: center left;
+        opacity: 0;
+        scale: 0;
+        rotate: z -90deg;
+        translate: 0 -100%;
+    }
+    to {
+        transform-origin: center left;
+        opacity: 1;
+        scale: 1;
+        rotate: z 0deg;
+        translate: 0 0;
+    }
+}
+
+@keyframes outro {
+    from {
+        transform-origin: center right;
+        opacity: 1;
+        scale: 1;
+        translate: 0 0;
+    }
+    to {
+        transform-origin: center right;
+        opacity: 0;
+        scale: 0;
+        translate: 0 100%;
+    }
+}
+li{
+	background-image: url(/public/componentes/img/wp2635093-league-of-legends-lux-wallpapers.jpg);
+
+}
