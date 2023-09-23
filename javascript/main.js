@@ -3,6 +3,8 @@ const datosUser = document.querySelector("#DatosUser")
 const buttonsubmit = document.querySelector(".buttonSubmit")
 const numerosTotal = document.querySelector("#n")
 const numeromax = document.querySelector("#xmax")
+const numerominimo = document.querySelector("#xmin")
+const rango = document.querySelector("#rango")
 ButtonDatos.addEventListener("submit", operar)
 
 
@@ -19,9 +21,11 @@ let arrOrdenado = muestra.sort()
 let n = arrOrdenado.length
 numerosTotal.textContent = n
 let Xmin = arrOrdenado[0]
+numerominimo.textContent=Xmin
 let Xmax = arrOrdenado[arrOrdenado.length -1]
 numeromax.textContent = Xmax
 let Rango = Xmax -Xmin
+rango.textContent=Rango
 let intervalo = Math.round(1 + 3.322*Math.log10(arrOrdenado.length))
 let RangoMedio = (Xmax + Xmin)/2
 let amplitudIntervalo = Rango/intervalo
@@ -71,6 +75,7 @@ frecuenciaSuavizada = datosSuavizadosIntervalo
 
 let ii = Clases.filter((x, i) => i%2 == 0)
 let is = Clases.filter((x, i) => i%2 != 0)
+
 
 
 const Tablaformada= {

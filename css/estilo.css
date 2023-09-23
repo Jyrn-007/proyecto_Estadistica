@@ -7,31 +7,26 @@
 }
 
 * {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 1px;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
   }
   body {
+    
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-
-	width: 100%;
-	height: 100%;
-	color:#2c2d2a;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+    margin: 50px;
+	 width: 90%;
+	 height: 100%;
+	 color:#2c2d2a;
 
     font-family: "Roboto", sans-serif;
      
-    background: linear-gradient(
-      to right,
-      #000000,
-      #2a2626
-    ); 
+      background-color: #000000;
   }
 
 a {
@@ -56,14 +51,14 @@ H1{
 	color: #ff0000;
 }
 .header {
-	
-	cursor: default;
+  	 
+  cursor:url(/img/imgcursor/yae.png),auto;
 	margin: 10px;
 	border-radius: 50px;
 	display: flex;
 	align-items: center;
 	height:auto;
-	width: 90%;
+	width: 100%;
 	white-space: nowrap;
 	flex-shrink: 0;
 	font-weight: 900;
@@ -75,8 +70,8 @@ H1{
 }
 
 .container {
+	 cursor: url(/img/imgcursor/mai-san.png),auto;
 	
-	cursor: default;
 	max-width: 1100px;
 	border-radius: 4px;
 	height: auto;
@@ -108,11 +103,10 @@ H1{
 }
 
 .imagenesesta{
-	display: flex;
-
+  display:flex;
+  overflow: auto; /*para que no se salga*/
 	align-items: center;
-	align-self: center;
-	padding:auto;
+	padding:10px;
 }
 
    
@@ -165,6 +159,7 @@ H1{
 	color: #ff605c;
 	background-color: #ff605c;
 	height: 200px;
+  width:auto;
 }
 .img1esta{
 	height: 200px;
@@ -229,6 +224,7 @@ h3{
 
 
 .footer {
+  overflow: auto;
 	width: 100%;
 	height: 100%;
     box-shadow:  -5px 5px 28px 17px #b70909;
@@ -280,33 +276,6 @@ h3{
 
   }
 
-
-
-  .redes{
-
-	display: flex;
-
-  }
-
-.gitup{
-	display: flex;
-	background-color: white;
-	margin: 10px;
-}
-  .git{
-	height: 70px;
-	width: 90px;
-  }
-
-  .face{
-	display: flex;
-	background-color: white;
-	margin: 10px;
-  }
-  .facebook{
-	height: 70px;
-	width: 60px;
-  }
 .imagenfin{
  height: 500px;
  width: 500px;
@@ -350,7 +319,9 @@ a{
 .desplazamientoderecha { /**/
     overflow: auto; /*para que no se salga*/
 	height:600px;/*altura */
+  cursor: pointer;
     padding: 1rem;
+
     scroll-timeline-axis: inline;
 }
 
