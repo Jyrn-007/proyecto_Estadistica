@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+/*la imagen en el boton se anula*/
 .botonimagen{
   background-image: none;
 
@@ -52,7 +52,6 @@ H1{
 }
 .header {
   	 
-  cursor:url(/img/imgcursor/yae.png),auto;
 	margin: 10px;
 	border-radius: 50px;
 	display: flex;
@@ -69,6 +68,7 @@ H1{
 
 }
 
+/*en donde va todo el contenido */
 .container {
 	 cursor: url(/img/imgcursor/mai-san.png),auto;
 	
@@ -102,15 +102,37 @@ H1{
 	padding: 10px;
 }
 
+/*div donde se almacenan las tarjetas de imagenes de estadistica*/
+
 .imagenesesta{
+  cursor: pointer;
   display:flex;
   overflow: auto; /*para que no se salga*/
 	align-items: center;
 	padding:10px;
 }
 
-   
-/*tarjetas*/
+/*es en donde van a estar lo nombres de los integrantes*/
+.container_nombres{
+
+  text-align: center;
+align-self: center;
+align-items: center;
+text-align-last: center;
+
+}
+
+/*los nombre de los integrantes*/
+.nombres_letras{
+text-align: center;
+align-self: center;
+align-items: center;
+text-align-last: center;
+
+/**/
+
+}
+/*imagenes con diseño de tarjetas*/
 .tarjeta {
 	width: 190px;
 	height: 254px;
@@ -123,6 +145,7 @@ H1{
 	margin: 20px;
   }
   
+  /*componentes superiores izquierda diseño circulos */
   .tresc {
 	display: flex;
 	align-items: center;
@@ -153,20 +176,25 @@ H1{
   .verde {
 	background-color: #00ca4e;
   }
+ /* */
 
 
+ 
 .inteesta{
 	color: #ff605c;
 	background-color: #ff605c;
 	height: 200px;
   width:auto;
 }
+ /*imagen de las tarjetas */
+
 .img1esta{
 	height: 200px;
 	width: 190px;
 }
+/* */
 
-
+/*boton de incio de secion de usuario */
 .boton1{
   
 	padding: 20px;
@@ -199,6 +227,9 @@ H1{
               0 0 110px rgb(0,140,255);
 }
 
+/* */
+
+/*el nombre del titulo del encabezado*/
 h3{
 
     color: blue;
@@ -206,6 +237,10 @@ h3{
 
      
 }
+/* */
+
+
+/*la animacion del el titulo*/
 
 @keyframes de {
 
@@ -314,7 +349,7 @@ a{
 }
 
 
-/*Manual*/
+/*todo el codigo de la*/
 
 .desplazamientoderecha { /**/
     overflow: auto; /*para que no se salga*/

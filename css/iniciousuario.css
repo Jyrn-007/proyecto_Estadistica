@@ -46,6 +46,7 @@ span{
   width:auto;
 
 }
+
 .contenedor{
 
     
@@ -133,6 +134,8 @@ body{
     box-shadow: -5px 5px 27px 17px #9B63D3, -5px 5px 25px 18px rgb(246, 9, 17);
 
 }
+
+/* visualizar= los datos más importantes  */
 .visualizar{
   font-size:4vh;
   display:flexbox;
@@ -150,11 +153,12 @@ body{
 
 .visualizar:hover{
   cursor: pointer;
-  box-shadow: -5px 5px 27px 17px #9B63D3, -5px 5px 25px 18px rgb(246, 9, 17);
+  box-shadow: -5px 5px 27px 17px #550e9b;
 
 }
 
 
+/*El menú es donde esta el boton de salir y tengo que hacer algunos cambios*/
 
 .menu{
 
