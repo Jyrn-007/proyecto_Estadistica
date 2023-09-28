@@ -5,6 +5,8 @@ const numerosTotal = document.querySelector("#n")
 const numeromax = document.querySelector("#xmax")
 const numerominimo = document.querySelector("#xmin")
 const rango = document.querySelector("#rango")
+const ampitudinteval = document.querySelector("#ampitudinterval")
+const numinter = document.querySelector("#numinter")
 ButtonDatos.addEventListener("submit", operar)
 
 
@@ -26,9 +28,11 @@ let Xmax = arrOrdenado[arrOrdenado.length -1]
 numeromax.textContent = Xmax
 let Rango = Xmax -Xmin
 rango.textContent=Rango
-let intervalo = Math.round(1 + 3.322*Math.log10(arrOrdenado.length))
+let intervalo = Math.round(1 + 3.322*Math.log10(arrOrdenado.length))// Math.round es para redondiar el número
+numinter.textContent = intervalo
 let RangoMedio = (Xmax + Xmin)/2
-let amplitudIntervalo = Rango/intervalo
+let amplitudIntervalo = Math.round(Rango/intervalo)
+ampitudinteval.textContent = amplitudIntervalo
 let cont = Xmin
 let Clases = []
 let frecuencia =[]
@@ -139,7 +143,7 @@ contenedorTabla.appendChild(boton)
 
 }
 
-
+// codigo de la tabla. 
 
    
 

@@ -243,6 +243,7 @@ menu{
 
 }
 
+
 .header-txt h1{
   padding: 10px;
  height: 1.2cm;    
@@ -257,6 +258,7 @@ menu{
     animation:rebota 7s linear both;
 
 }
+
 
 @keyframes rebota{
   0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}
