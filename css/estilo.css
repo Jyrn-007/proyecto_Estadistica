@@ -352,7 +352,7 @@ a{
 /*todo el codigo de la*/
 
 .desplazamientoderecha { /**/
-    overflow: auto; /*para que no se salga*/
+  overflow: auto; /*para que no se salga*/
 	height:600px;/*altura */
   cursor: pointer;
     padding: 1rem;
@@ -384,7 +384,7 @@ ol,ul {
         animation-range: entry, exit;
         transform-origin: bottom center;
     }
-
+    
     p,
     h2 {
         margin-top: 1rem;
