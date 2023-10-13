@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*imagen 1 en el manual*/
+ .imagen1m{
+  padding: 10px;
+  height:200px;
+  width:260px;
+
+ }
+
+
+.imagen2m{
+  
+  height:200px;
+  width:260px ;
+  border-image-width: 10px;
+
+
+}
+ /*imagen 2 del del manual*/
+
 /*la imagen en el boton se anula*/
 .botonimagen{
   background-image: none;
@@ -45,7 +65,10 @@ h2 {
 }
 
 
+h3{
+ font-size: 30px;
 
+}
 H1{
 	padding: 10px;
 	color: #ff0000;
@@ -70,7 +93,7 @@ H1{
 
 /*en donde va todo el contenido */
 .container {
-	 cursor: url(/img/imgcursor/mai-san.png),auto;
+	 cursor: url(/proyecto_Estadistica/img/imgcursor/mai-san.png),auto;
 	
 	max-width: 1100px;
 	border-radius: 4px;
@@ -86,6 +109,7 @@ H1{
 .img1 {
 	width: 300px;
 	height: 200px;
+
 	
 }
 .imagen{
@@ -196,12 +220,13 @@ text-align-last: center;
 
 /*boton de incio de secion de usuario */
 .boton1{
-  
+  cursor: pointer;
 	padding: 20px;
 	align-self: center;
 
 }
 .botoni{
+  cursor: pointer;
 	padding: 10px 20px;
 	border: none;
 	font-size: 17px;
@@ -353,16 +378,14 @@ a{
 
 .desplazamientoderecha { /**/
   overflow: auto; /*para que no se salga*/
-	height:600px;/*altura */
+	height:380px;/*altura */
   cursor: pointer;
     padding: 1rem;
-
-    scroll-timeline-axis: inline;
 }
 
 ol,ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
     grid-gap: 1rem;
     display: flex;
     gap: 1rem;
@@ -370,31 +393,17 @@ ol,ul {
     padding-left: 0;
     counter-reset: list-item;
     perspective: 9000px;
-    transform-style: preserve-3d;
     perspective-origin: 50% 50%;
 
-    > li {
+    li {
         flex: 1 1 240px;
         min-width: 240px;
         border: 1px solid currentColor;
         padding: 1rem;
-        animation: auto ease-in-out intro forwards,
-            auto ease-in-out outro forwards;
-        animation-timeline: view(inline);
-        animation-range: entry, exit;
-        transform-origin: bottom center;
+
     }
     
-    p,
-    h2 {
-        margin-top: 1rem;
-        margin-bottom: 0;
-    }
 
-    h2 {
-        color: rgb(0, 0, 0)fff;
-        font-weight: normal;
-    }
 }
 
 ol > li {
@@ -404,67 +413,14 @@ ol > li {
     position: relative;
     overflow: hidden;
 
-    &::before {
-       
-        font-size: 5em;
-        font-weight: bold;
-        color: #e10000;
-        margin-bottom: 1rem;
-        line-height: 1;
-    }
 
-    &::after {
-        content: "";
-        background-image: var(--bg);
-        position: absolute;
-        inset: -20px;
-        background-size: cover;
-        transform: scale(1);
-        transition: transform 0.5s ease-out, opacity 0.4s linear;
-        opacity: 0;
-        z-index: -1;
-    }
-
-    &:hover {
-        color: #000000;
-        &::after {
-            transform: scale(1.1) rotate(4deg);
-            opacity: 0.8;
-        }
-    }
 }
 
 
-@keyframes intro {
-    from {
-        transform-origin: center left;
-        opacity: 0;
-        scale: 0;
-        rotate: z -90deg;
-        translate: 0 -100%;
-    }
-    to {
-        transform-origin: center left;
-        opacity: 1;
-        scale: 1;
-        rotate: z 0deg;
-        translate: 0 0;
-    }
-}
-
-@keyframes outro {
-    from {
-        transform-origin: center right;
-        opacity: 1;
-        scale: 1;
-        translate: 0 0;
-    }
-    to {
-        transform-origin: center right;
-        opacity: 0;
-        scale: 0;
-        translate: 0 100%;
-    }
+.conteimg{
+  background-color: #00ca4e;
+  align-items: center;
+  align-self: center;
 }
 li{
 	background-image: url(/public/componentes/img/wp2635093-league-of-legends-lux-wallpapers.jpg);
